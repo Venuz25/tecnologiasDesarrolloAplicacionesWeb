@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::Prueba de Eventos::.</title>
+    <script type="text/javascript">
+        imagen1 = new Image;
+        imagen1.src = "js.png";
+
+        imagen2 = new Image;
+        imagen2.src = "jQuery.png";
+
+        imagen3 = new Image;
+        imagen3.src = "1.png";
+
+        imagen4 = new Image;
+        imagen4.src = "2.png";
+
+        let i=1;
+        let x=1;
+
+        function cambiarImg(){
+            if (i==1) {
+                document.images['icono'].src = imagen2.src;
+                i=2;
+            }
+            else{
+                document.images['icono'].src = imagen1.src;
+                i=1;
+            }
+        }
+
+        function cambiarImg1(){
+            if (x==1) {
+                document.images['icono2'].src = imagen4.src;
+                x=2;
+            }
+            else{
+                document.images['icono2'].src = imagen3.src;
+                x=1;
+            }
+        }
+    </script>
+</head>
+<body>
+        <h2>Eventos <i>Onmouseover y Onmouseout</i></h2>
+        <p>
+            <img src="js.png" alt="gatoA" title="gato A" width="45%" id="icono" onmouseover="cambiarImg();" onmouseout="cambiarImg();" >
+            <img src="1.png" alt="gatoMago" title="Gato Mago" width="45%" id="icono2" onmouseover="cambiarImg1();" onmouseout="cambiarImg1();" >
+        </p>
+</body>
+</html>
