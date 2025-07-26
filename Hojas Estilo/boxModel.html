@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>.:: Modelo de Caja ::.</title>
+  <style>
+    .centrado {
+      text-align: center;
+    }
+
+    .negrita {
+      font-weight: bold;
+    }
+
+    .ancho{
+      color:#4869c4;
+    }
+
+    .alto{
+      color: #681179;
+    } 
+
+    div{
+      width: 100px;
+      padding: 25px;
+      border: 5px double orange;
+      margin: 0px;
+      height: 150px;
+    }
+
+    .caja{
+      width: 200px;
+      padding: 10px 5px;
+      border: 5px dotted blue;
+      margin: 5px;
+      height: 200px;
+      }
+
+</style>
+</head>
+
+<body>
+    <h2 class="centrado">Modelo de caja</h2>
+    <p>Para calcular el ancho y alto total de un elemento aplicando el modelo de caja, recuerda considerar las propiedades que intervienen, utilizando las siguientes fórmulas:</p>
+
+    <p class="negrita">Ancho total de mi elemento div = <span class="ancho">ancho + padding izq + padding der + borde izq
+    + borde der</span></p>
+    <p class="negrita">Alto total de mi elemento div = <span class="alto"> alto + padding superior + padding inferior +
+    borde superior + borde inferior</span></p>
+
+    <div>Este texto nos muestra el modelo de caja aplicado a un elemento <code class="negrita">div</code></div>
+  
+    <h3 class="negrita centrado">¿Cu&aacute;l es el alto total del siguiente elemento <code>p</code>?</h3>
+    
+    <!-- Colocar elemento p y definir su clase -->
+
+    <p class="caja">Este párrafo muestra el modelo de caja</p>
+  
+</body>
+
+</html>

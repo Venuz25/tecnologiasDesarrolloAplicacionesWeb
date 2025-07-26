@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formularios</title>
+    </head>
+<body>
+    <main>
+        <h1>Bienvenido a tu registro</h1>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Datos</legend>
+                    
+                
+                    <label for="color">Color favorito</label>
+                    <select>
+                        <option value="Azul">Azul</option>
+                        <option value="Rojo">Rojo</option>
+                        <option value="Morado">Morado</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Amarillo">Amarrillo</option>
+                    </select><br>
+                    
+                    <label>Eres regular</label>
+                    <input type="radio" name="regular" id="Si">Si
+                    <input type="radio" name="regular" id="No">No<br>
+                            
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" name="telefono" id="telefono" pattern="[0-9]{10}">
+
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad" min="18" max="40">
+
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <button type="reset">Limpiars</button>
+                    </div>
+            </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

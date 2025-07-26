@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Patricia Escamilla">
+    <title>.:: Selectores Pseudo Clase ::. </title>
+    <style>
+        div{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .centrado{
+            text-align: center;
+        }
+        /*link*/
+    
+        a:link{
+            color:green;
+        }
+
+        a:visited{
+            color:red;
+        }
+        a:hover{
+            color:black;
+        }
+       
+        a:active{
+            color:purple;
+        }
+
+        div:hover.cambio{
+            background-color:black;
+            width: 300px;
+            color:lightblue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>PseudoClase</h1> 
+            <p>Selecciona los elementos basados en un cierto estado:</p>
+            <p class="centrado"><img src="imgs/pseudoClase.fw.png" alt="PseudoClase en CSS" width="260" height="130" alt="Sintaxis de pseudoclase"></p>
+
+        <p><a href="http://www.youtube.com" target="_blank">Haz clic aquí</a></p>
+        <p><strong>Nota</strong> <code>a:hover</code> debe definirse despu&eacute;s de <code>a:link</code> y <code>a:visited</code>, as&iacute; como, <code>a:active</code> debe definirse despu&eacute;s de <code>a:hover</code> para ser efectivos.</p> 
+
+        <div class="cambio">Pasa el mouse sobre mi</div>
+    </div>
+</body>
+
+</html>

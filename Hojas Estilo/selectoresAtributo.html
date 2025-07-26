@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Patricia Escamilla" />
+    <title>.:: Selectores de Atributo ::.</title>
+    <style>
+        h3{
+            text-align: center;
+            color: darkblue;
+        }
+
+        #centrado{
+          text-align: center;
+        }
+
+        /* Este código es utilizado para los selectores de atributo */
+        a[target="_self"]{
+        background-color: purple;
+        }
+
+        a[target="_blank"]{
+        background-color: rgb(46, 46, 255);
+        color: white;
+        }
+
+        /* que el atributo alt incluya la palabra "la" */
+        img[alt~="la"]{
+          transform:rotate(180deg);
+        }
+
+        input[type="text"]{
+          background-color:lightblue;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Código para ver el funcionamiento de los selectores de atributo -->
+    <h3>Ejemplo de selector de atributo</h3>
+    <div id="centrado">
+      <p>Para los siguientes links se aplican reglas distintas de acuerdo al valor del atributo <strong>target</strong>.</p>
+      <a href="https://www.w3schools.com/html/" target="_self">W3Schools</a>
+      <a href="http://www.disney.com" target="_blank">Disney</a>
+      <img src="imgs/burrito.fw.png" alt="la mascota del IPN">
+    </div>
+  </body>
+</html>

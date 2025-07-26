@@ -1,0 +1,26 @@
+/* Selectores de descendencia o combinador
+(afectan a elementos dentro de otros elementos) */
+/* main p{
+    font-size:30px;
+} */
+
+
+/* Elementos p que son hijos de un elemento section */
+/* section>p{
+    font-size: 20px;
+    color:chartreuse;
+} */
+
+/* Esta regla afecta a los elementos p que están después de un elemento h1 */
+/* h1+p{
+	color: orange;
+} */
+
+/* Esta regla afecta a todos los elementos p que están a continuación de otro elemento p */
+/* p~div{
+    font-size: 30px;
+    color: purple;
+} */
+
+
+
