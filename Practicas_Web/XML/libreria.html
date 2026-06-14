@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::Ejemplo con DOM::.</title>
+</head>
+<body>
+    <h1 id="demo">Este es un encabezado</h1>
+    <p>Este es un párrafo</p>
+    <p>Este es otro un párrafo</p>
+
+    <script>
+        document.getElementById("demo").innerHTML="Palabras complicadas";
+        document.getElementsByTagName("p")[1].innerHTML="Hipopotomostrosesquipedalofobia";
+
+    </script>
+
+    <h3>El libro consultado a traves de DOM XML es:</h3>
+    <p id="dato"></p>
+    <p id="autor"></p>
+    <p id="año"></p>
+
+
+    <script>
+        var text, parse, xmlDom;
+
+        text = 
+        "<librerias>"+
+            "<libro>"+
+                "<titulo>Harry Potter y la Piedra Filosofal</titulo>"+
+                "<autor>J:K Rowlling</autor>"+
+                "<año>1997</año>"+
+            "</libro>"+
+
+            "<libro>"+
+                "<titulo>Harry Potter y la Camara Secreta</titulo>"+
+                "<autor>J:K Rowlling</autor>"+
+                "<año>2002</año>"+
+            "</libro>"+
+
+            "<libro>"+
+                "<titulo>Harry Potter y el Prisionero de Azkaban</titulo>"+
+                "<autor>J:K Rowlling</autor>"+
+                "<año>2004</año>"+
+            "</libro>"+
+
+            "<libro>"+
+                "<titulo>Harry Potter y el Caliz de Fuego</titulo>"+
+                "<autor>J:K Rowlling</autor>"+
+                "<año>2005</año>"+
+            "</libro>"+
+
+            "<libro>"+
+                "<titulo>Harry Potter y el Misterio del Pricipe</titulo>"+
+                "<autor>J:K Rowlling</autor>"+
+                "<año>2006</año>"+
+            "</libro>"+
+
+            "<libro>"+
+                "<titulo>Harry Potter y la Orden del Fenix</titulo>"+
+                "<autor>J:K Rowlling</autor>"+
+                "<año>2007</año>"+
+            "</libro>"+
+
+            "<libro>"+
+                "<titulo>Harry Potter y las Reliquias de la Muerte</titulo>"+
+                "<autor>J:K Rowlling</autor>"+
+                "<año>2008</año>"+
+            "</libro>"+
+        
+        "</librerias>";
+
+        parse=new DOMParser();
+        xmlDom=parse.parseFromString(text,"text/xml");
+        
+        var x = xmlDom.getElementsByTagName("titulo");
+        var y = xmlDom.getElementsByTagName("autor");
+        var z = xmlDom.getElementsByTagName("año");
+
+        resultado = "";
+
+        for (i = 0; i < x.length; i++) {
+            resultado += x[i].childNodes[0].nodeValue + "<br>" + y[i].childNodes[0].nodeValue + "<br>" + z[i].childNodes[0].nodeValue + "<br><br>";
+        }
+        
+        document.getElementById("dato").innerHTML = resultado;
+
+        
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>.::Calculadora::.</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .btn-group button {
+            width: 50px;
+            height: 50px;
+            font-size: medium;
+            font-weight: bold;
+        }
+        div {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div><h1>Calculadora con JS</h1></div>
+
+        <div style="width: 80%; margin: 0 auto;">
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="n1">N°1</label>
+                <input type="number" id="n1" name="n1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" pattern="">
+            </div>
+
+            <div class="btn-group" role="group" aria-label="Default button group" style="align-content: center;">
+                <button type="button" class="btn btn-outline-primary rounded-circle flex-fill mx-2" id="suma"> + </button>
+                <button type="button" class="btn btn-outline-success rounded-circle flex-fill mx-2" id="resta"> - </button>
+                <button type="button" class="btn btn-outline-danger rounded-circle flex-fill mx-2" id="division"> ÷ </button>
+                <button type="button" class="btn btn-outline-warning rounded-circle flex-fill mx-2" id="multiplicacion"> × </button>
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="n2">N°2</label>
+                <input type="number" id="n2" name="n2" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" pattern="">
+            </div>
+        </div>
+
+        <div style="width: 80%; margin: 0 auto;">
+            <h3>Resultado:</h3>
+            <p id="resp">Resultado aquí :)</p>
+        </div>
+    </main>
+
+    <script src="operaciones.js"></script>
+</body>
+</html>

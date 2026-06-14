@@ -1,0 +1,42 @@
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: #4658e3;
+}
+
+section {  
+    width: 80%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border: 2px double black;
+    text-align: center;
+}
+
+th {
+    color: white;
+    background-color: darkblue;
+
+}
+
+#fondo {
+    background-color: lightblue;
+}
+
+td {
+    border: 1px solid darkblue;
+}
+
+.hora {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.libre {
+    background-color: #4658e3;
+}
+

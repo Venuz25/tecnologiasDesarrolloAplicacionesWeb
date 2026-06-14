@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::Matchs::.</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form id="datos">
+        <fieldset>
+            <legend>Match</legend>
+
+            <label for="correo">Correo:</label>
+            <input type="text" name="correo" id="correo" placeholder="Ingresa tu correo"><br>
+
+            <label for="resultado">Muestro el arroba:</label>
+            <input type="text" id="resultado"><br>
+
+            <input type="button" value="Verificar" onclick="arroba()">
+        </fieldset>
+
+        <fieldset>
+            <legend>Replace</legend>
+
+            <label for="frase">Escribe una frase con la palabra alegre:</label>
+            <input type="text" name="frase" id="frase"><br>
+
+            <label for="filtro">Resultado del filtro:</label>
+            <input type="text" id="filtro" name="filtro"><br>
+
+            <input type="button" value="Filtrar" onclick="testeo();">            
+        </fieldset>
+    </form>
+
+    <script type="text/javascript">
+        function arroba(){
+            var txt = document.forms.datos.correo.value;
+            var resultado = txt.match(/@/);
+
+            if (resultado == '@') {
+                document.forms.datos.resultado.value = "Tu correo es correcto";
+            } else {
+                document.forms.datos.resultado.value = "Tu correo es incorrecto";
+            }
+        }
+
+        function testeo(){
+            var patron = /alegre|feliz|contento/g;
+            var cambiar = "triste";
+            var txt = document.forms.datos.frase.value;
+
+            resultado = txt.replace(patron, cambiar);
+            document.forms.datos.filtro.value = resultado;
+        }
+    </script>
+
+</body>
+</html>

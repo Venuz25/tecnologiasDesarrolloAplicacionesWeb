@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Estilos.xsl"?>
+
+    <librerias>
+        <libro>
+            <titulo>Harry Potter y la Piedra Filosofal</titulo>
+            <autor>J:K Rowlling</autor>
+            <fechaPublicacion año = "1997" />
+        </libro>
+
+        <libro>
+            <titulo>Harry Potter y la Camara Secreta</titulo>
+            <autor>J:K Rowlling</autor>
+            <fechaPublicacion año = "2002" />
+        </libro>
+
+        <libro>
+            <titulo>Harry Potter y el Prisionero de Azkaban</titulo>
+            <autor>J:K Rowlling</autor>
+            <fechaPublicacion año = "2004" />
+        </libro>
+
+        <libro>
+            <titulo>Harry Potter y el Caliz de Fuego</titulo>
+            <autor>J:K Rowlling</autor>
+            <fechaPublicacion año = "2005" />
+        </libro>
+
+        <libro>
+            <titulo>Harry Potter y el Misterio del Pricipe</titulo>
+            <autor>J:K Rowlling</autor>
+            <fechaPublicacion año = "2006" />
+        </libro>
+
+        <libro>
+            <titulo>Harry Potter y la Orden del Fenix</titulo>
+            <autor>J:K Rowlling</autor>
+            <fechaPublicacion año = "2007" />
+        </libro>
+
+        <libro>
+            <titulo>Harry Potter y las Reliquias de la Muerte</titulo>
+            <autor>J:K Rowlling</autor>
+            <fechaPublicacion año = "2008" />
+        </libro>
+
+    </librerias>

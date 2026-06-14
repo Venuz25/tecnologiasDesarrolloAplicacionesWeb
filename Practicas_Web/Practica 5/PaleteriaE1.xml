@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="PaleteriaE1.xsl"?>
+
+
+<paleteria>
+    <paleta categoria="Agua">
+        <sabor>Limon</sabor>
+        <tamaño>Pequeño</tamaño>
+        <ingrediente>Agua Limon</ingrediente>
+        <precio>15</precio>
+    </paleta>
+    <paleta categoria="Agua">
+        <sabor>Jamaica</sabor>
+        <tamaño>Mediana</tamaño>
+        <ingrediente>Agua Jamaica</ingrediente>
+        <precio>20</precio>
+    </paleta>
+    <paleta categoria="Agua">
+        <sabor>Chicle</sabor>
+        <tamaño>Mediana</tamaño>
+        <ingrediente>Saborizante Chicle</ingrediente>
+        <precio>20</precio>
+    </paleta>
+    <paleta categoria="Agua">
+        <sabor>Tamarindo</sabor>
+        <tamaño>Pequeño</tamaño>
+        <ingrediente>Agua Tamarindo</ingrediente>
+        <precio>15</precio>
+    </paleta>
+    <paleta categoria="Yogurt">
+        <sabor>Mango</sabor>
+        <tamaño>Mediana</tamaño>
+        <ingrediente>Yogurt Mango</ingrediente>
+        <precio>25</precio>
+    </paleta>
+    <paleta categoria="Yogurt">
+        <sabor>Danonino</sabor>
+        <tamaño>Pequeño</tamaño>
+        <ingrediente>Danonino</ingrediente>
+        <precio>20</precio>
+    </paleta>
+    <paleta categoria="Yogurt">
+        <sabor>Fresas con Crema</sabor>
+        <tamaño>Mediana</tamaño>
+        <ingrediente>Fresas con Crema</ingrediente>
+        <precio>35</precio>
+    </paleta>
+    <paleta categoria="Yogurt">
+        <sabor>Ciruela Pasa</sabor>
+        <tamaño>Pequeña</tamaño>
+        <ingrediente>Yogurt Ciruela Pasa</ingrediente>
+        <precio>30</precio>
+    </paleta>
+    <paleta categoria="Leche">
+        <sabor>Chocolate</sabor>
+        <tamaño>Mediana</tamaño>
+        <ingrediente>Leche Chocolate</ingrediente>
+        <precio>37</precio>
+    </paleta>
+    <paleta categoria="Leche">
+        <sabor>Horchata</sabor>
+        <tamaño>Pequeña</tamaño>
+        <ingrediente>Agua Horchata</ingrediente>
+        <precio>37</precio>
+    </paleta>
+    <paleta categoria="Leche">
+        <sabor>Chocomenta</sabor>
+        <tamaño>Mediano</tamaño>
+        <ingrediente>Saborizante Chocomenta</ingrediente>
+        <precio>40</precio>
+    </paleta>
+    <paleta categoria="Leche">
+        <sabor>Ferrero</sabor>
+        <tamaño>Mediano</tamaño>
+        <ingrediente>Ferrero</ingrediente>
+        <precio>45</precio>
+    </paleta>
+</paleteria>
